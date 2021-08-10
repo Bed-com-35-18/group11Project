@@ -1,0 +1,41 @@
+function doGet(e) {
+  var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1hyG-N6EG28u9z1PYZ8twe_rCb5yJCQwxAIlU-eHk-hk/edit#gid=0");
+  var sheet = ss.getSheetByName("Sheet1");
+
+ 
+addUser(e, sheet);
+
+}
+function doPost(e){
+  var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1hyG-N6EG28u9z1PYZ8twe_rCb5yJCQwxAIlU-eHk-hk/edit#gid=0");
+
+  var sheet = ss.getSheetByName("Sheet1");
+
+  
+
+ addUser(e, sheet);
+
+}
+
+function addUser (e, sheet){
+  var result = e.parameter.result;
+  var invigilators = e.parameter.invigilators;
+   var courseCode = e.parameter.courseCode;
+  var roomName = e.parameter.roomName;
+  
+
+  sheet.appendRow([result]);
+}
+ 
+ function addUser (e, sheet){
+  
+  var invigilators = e.parameter.invigilators;
+   var courseCode = e.parameter.courseCode;
+  var roomName = e.parameter.roomName;
+  
+
+  sheet.appendRow([" ",invigilators,courseCode,roomName]);
+}
+ 
+
+
