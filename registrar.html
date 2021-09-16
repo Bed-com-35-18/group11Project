@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam attendance</title>
+    <link rel="stylesheet" href="./registrar.css">
+</head>
+<body>
+   
+   
+          
+      
+    <form class="form" action="db_connection.php" method= "POST">
+
+        <h1> UNIMA EXAM ATTENDANCE SYSTEM</h1>
+      
+  
+        <img src="unimaLog.jpg" /> 
+        <hr><br><br>
+        <label>INVIGILATOR..:</label>  
+        <select name="Invigilator" required>
+        <option value="">Select invigilator</option>
+        <option value="Mr. Precious Mlimbika">Mr. Precious Mlimbika</option>
+        <option value="Mr. Chifuniro Masula">Mr. Chifuniro Masula</option>
+        <option value="Mr. Ganizani Mkwapatila">Mr. Ganizani Mkwapatila</option>
+        <option value="Mr. Noel Phiri">Mr. Noel Phiri</option>
+        </select> <br><br>
+         
+         <label>COURSE CODE......:</label >  
+         <select name="coursecode" required>  
+         <option value="">Select Course Code</option>
+         <option value="COM311">COM311</option>
+         <option value="COM312">COM312</option>
+         <option value="COM313">COM313</option>
+         <option value="COM314">COM314</option>
+         </select> <br><br>
+
+         <label>ROOM NAME..........:</label >  
+         <select name="roomName" required>  
+         <option value="">Select Room Name</option>
+         <option value="CL">CL</option>
+         <option value="GH">GH</option>
+         <option value="LT 1">LT 1</option>
+         <option value="CK 2">CK 2</option>
+         <option value="MW 1">MW 1</option>
+         </select> <br><br>
+
+
+         <label>DATE....................:</label >  
+         <select name="date" required>  
+         <option value="">Select Date</option>
+         <option value="27 SEPTEMBER 2021">27 SEPTEMBER 2021</option>
+         <option value="28 SEPTEMBER 2021">28 SEPTEMBER 2021</option>
+         <option value="29 SEPTEMBER 2021">29 SEPTEMBER 2021</option>
+         <option value="30 SEPTEMBER 2021">30 SEPTEMBER 2021</option>
+         <option value="1 OCTOBER    2021">1 OCTOBER    2021</option>
+         <option value="4 OCTOBER    2021">4 OCTOBER    2021</option>
+         <option value="5 OCTOBER    2021">5 OCTOBER    2021</option>
+         <option value="6 OCTOBER    2021">6 OCTOBER    2021</option>
+         <option value="7 OCTOBER    2021">7 OCTOBER    2021</option>
+         <option value="8 OCTOBER    2021">8 OCTOBER    2021</option>
+         </select> <br><br>
+
+
+         <label>TIME.....................................:</label >  
+         <select name="time" required>  
+         <option value="">Select Time</option>
+         <option value="08:30-11:30">08:30-11:30</option>
+         <option value="13:30-16:30">13:30-16:30</option>
+         </select> <br><br>
+
+         
+         <button type="submit" name="done" >Submit</button>   
+
+          </form>
+   </body>
+</html>
